@@ -2257,7 +2257,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 53f07da8c729c7348a8842b5f86be333, type: 3}
   - {fileID: 8300000, guid: e6442083352272743b4fbdf8f708c0e6, type: 3}
   - {fileID: 8300000, guid: 0ca2b267c2212a74f92287da632e6b86, type: 3}
-  sceneName: 
+  sceneName: transition1
 --- !u!64 &359400696
 MeshCollider:
   m_ObjectHideFlags: 0
