@@ -34,6 +34,7 @@ public class voidTransportation : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("triggered");
         if (other.CompareTag("shards") && shardCount < numShards)
         {
             shardCount++;
@@ -42,11 +43,12 @@ public class voidTransportation : MonoBehaviour
             index = Random.Range(0, abyssSound.Length);
             //abyssSource.Stop();
             AudioSource.PlayClipAtPoint(abyssSound[index], transform.position);
-            Debug.Log("soundChange" + index);
+            //Debug.Log("soundChange" + index);
         }
 
         if (other.CompareTag("GameController") && shardCount == numShards)
         {
+            Debug.Log("next");
             SceneManager.LoadScene(sceneName);
         }
 
